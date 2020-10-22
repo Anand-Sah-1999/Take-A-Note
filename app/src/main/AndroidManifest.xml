@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.takeanote">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/notepad_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/notepad_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".New_Note"
+            android:label="Take A Note"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".Main_Page"/>
+        <activity
+            android:name=".Main_Page"
+            android:label="Take A Note"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
